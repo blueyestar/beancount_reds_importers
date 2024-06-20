@@ -14,7 +14,7 @@ class Importer(banking.Importer, csvreader.Importer):
         self.filename_pattern_def = ".*History"
         self.date_format = "%m/%d/%Y"
         header_s0 = (
-            ".*Run Date,Action,Symbol,Security Description,Security Type,Quantity,Price \\(\\$\\),"
+            ".*Run Date,Action,Symbol,Description,Security Type,Quantity,Price \\(\\$\\),"
         )
         header_s1 = "Commission \\(\\$\\),Fees \\(\\$\\),Accrued Interest \\(\\$\\),Amount \\(\\$\\),Settlement Date"
         header_sum = header_s0 + header_s1
