@@ -34,7 +34,9 @@ class Importer(banking.Importer, csvreader.Importer):
             "Description": "security_description",
             "Symbol":               "security",
             "Price ($)":            "unit_price",
+            "Cash Balance ($)":     "balance",
         }
+        self.skip_transaction_types = []
         # fmt: on
 
     def deep_identify(self, file):
