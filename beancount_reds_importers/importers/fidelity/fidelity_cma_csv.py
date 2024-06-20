@@ -29,9 +29,9 @@ class Importer(banking.Importer, csvreader.Importer):
             "Settlement Date":      "settleDate",
             "Accrued Interest ($)": "accrued_interest",
             "Fees ($)":             "fees",
-            "Security Type":        "security_type",
+            "Type":        "security_type",
             "Commission ($)":       "commission",
-            "Security Description": "security_description",
+            "Description": "security_description",
             "Symbol":               "security",
             "Price ($)":            "unit_price",
         }
