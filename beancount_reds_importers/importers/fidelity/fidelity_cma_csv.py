@@ -19,8 +19,8 @@ class Importer(banking.Importer, csvreader.Importer):
         header_s1 = "Commission \\(\\$\\),Fees \\(\\$\\),Accrued Interest \\(\\$\\),Amount \\(\\$\\),Cash Balance \\(\\$\\),Settlement Date"
         header_sum = header_s0 + header_s1
         self.header_identifier = header_sum
-        self.skip_head_rows = 5
-        self.skip_tail_rows = 16
+        self.skip_head_rows = 2
+        self.skip_tail_rows = 13
         # fmt: off
         self.header_map = {
             "Run Date":             "date",
