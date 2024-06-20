@@ -12,7 +12,7 @@ class Importer(banking.Importer, csvreader.Importer):
     def custom_init(self):
         self.max_rounding_error = 0.04
         self.filename_pattern_def = ".*History"
-        self.date_format = "%m/%d/%Y"
+        self.date_format = "%b-%d-%Y"
         header_s0 = (
             ".*Run Date,Action,Symbol,Description,Type,Quantity,Price \\(\\$\\),"
         )
