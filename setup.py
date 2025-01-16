@@ -27,7 +27,7 @@ setup(
     },
     install_requires=[
         "Click >= 7.0",
-        "beancount >= 2.3.5",
+        "beancount >=2.3.5,<3.0.0",
         "click_aliases >= 1.0.1",
         "dateparser >= 1.2.0",
         "ofxparse >= 0.21",
@@ -42,6 +42,7 @@ setup(
         "console_scripts": [
             "ofx-summarize = beancount_reds_importers.util.ofx_summarize:summarize",
             "bean-download = beancount_reds_importers.util.bean_download:cli",
+            "reds-ibkr-flexquery-download = beancount_reds_importers.importers.ibkr.flexquery_download:flexquery_download",
         ]
     },
     zip_safe=False,

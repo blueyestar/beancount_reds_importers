@@ -32,6 +32,8 @@ File format readers included are:
 - `.ofx`
 - `.csv` (single and multitable support)
 - `.xlsx` (single and multitable support) (`pip3 install xlrd` if you plan to use this)
+- `.pdf` (single and multitable support)
+
 
 Transaction builders included are:
 - Banking (for banks and credit cards, which benefit from a postings predictor like
@@ -98,7 +100,8 @@ for f in ~/.zcomplete/*; do source $f; done
 pip3 install beancount-reds-importers
 ```
 
-Or to install the bleeding edge version from git:
+Or to install the bleeding edge version from git (which I recommend, as long as you are
+willing to understand there might be a bug or two):
 ```
 pip3 install git+https://github.com/redstreet/beancount_reds_importers
 ```
